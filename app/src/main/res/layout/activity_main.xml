@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.test.game.MainActivity">
+
+    <!--<GridView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/board"-->
+        <!--android:animateLayoutChanges="true"-->
+        <!--android:id="@+id/gridview">-->
+    <!--</GridView>-->
+    <ImageView
+        android:id="@+id/default_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red"
+        android:visibility="invisible"
+        />
+
+    <GridLayout
+        android:layout_width="606dp"
+        android:layout_height="606dp"
+        android:id="@+id/gridlayout"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:background="@drawable/board">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="197dp"
+            android:layout_height="197dp"
+            android:layout_margin="3dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="197dp"
+            android:layout_height="197dp"
+            android:layout_margin="3dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="197dp"
+            android:layout_height="197dp"
+            android:layout_margin="3dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout4"
+            android:layout_width="197dp"
+            android:layout_height="197dp"
+            android:layout_margin="3dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout5"
+            android:layout_width="197dp"
+            android:layout_height="197dp"
+            android:layout_margin="3dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout6"
+            android:layout_width="197dp"
+            android:layout_height="197dp"
+            android:layout_margin="3dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout7"
+            android:layout_width="197dp"
+            android:layout_height="197dp"
+            android:layout_margin="3dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout8"
+            android:layout_width="197dp"
+            android:layout_height="197dp"
+            android:layout_margin="3dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout9"
+            android:layout_width="197dp"
+            android:layout_height="197dp"
+            android:layout_margin="3dp"></LinearLayout>
+    </GridLayout>
+
+    <Button
+        android:text="StartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="86dp"
+        android:id="@+id/startgame" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/startgame"
+        android:layout_toEndOf="@+id/startgame"
+        android:id="@+id/reset"
+        android:layout_alignBottom="@+id/startgame" />
+
+</RelativeLayout>
